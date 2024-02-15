@@ -1,3 +1,4 @@
+import arithmetica from "./arithmetica"
 const express =require('express') 
 const cors = require('cors')
 const app=express()
@@ -12,7 +13,7 @@ app.get('/:a/:b',(req,res)=>{
 
 
 
-function getNumbers(a,b) {
-return parseInt(a)+parseInt(b);
-}
+// function getNumbers(a,b) {
+// return parseInt(a)+parseInt(b);
+// }
 
