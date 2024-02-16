@@ -1,4 +1,4 @@
-const getNumbers = require('../arithmetica.js')
+import { getNumbers, subtractNumbers } from '../arithmetica.js';
 // const {subtractNumbers} = require('../arithmetica')
 test('2+5', ()=>{expect(getNumbers.method("2","5")).toBe(7)});
 test('5+5', ()=>{expect(getNumbers.method("5","5")).toBe(10)});
