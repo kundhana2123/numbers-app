@@ -2,6 +2,7 @@
   "name": "se",
   "version": "1.0.0",
   "type": "module",
+  "testEnvironment": "node",
   "description": "",
   "main": "index.js",
   "scripts": {
