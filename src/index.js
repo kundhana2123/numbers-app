@@ -1,4 +1,5 @@
-import arithmetica from "./arithmetica.js"
+const { method: getNumbers, othermethod: subtractNumbers } = require("./arithmetica.js");
+
 const express =require('express') 
 const cors = require('cors')
 const app=express()
