@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import { getNumbers, subtractNumbers } from "./arithmetica.js";
-=======
-import {  getNumbers, subtractNumbers } from "./arithmetica.js";
-
->>>>>>> refs/remotes/origin/main
+import arithmetica from './arithmetica'
 const express =require('express') 
 const cors = require('cors')
 const app=express()

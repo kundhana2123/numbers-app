@@ -1,6 +1,7 @@
-// function getNumbers(a,b) {
-//     return parseInt(a)+parseInt(b);
-//     }
+function getNumbers(a,b) {
+    return parseInt(a)+parseInt(b);
+    }
+module.exports={ getNumbers }
 
 // function subtractNumbers(a,b) {
 //     console.log( (parseInt(a)-parseInt(b)))
@@ -9,23 +10,11 @@
 // module.exports= { method:getNumbers() ,
 // othermethod: subtractNumbers() ,
 //  };
-export function getNumbers(a, b) {
-    return parseInt(a) + parseInt(b);
-}
+// export function getNumbers(a, b) {
+//     return parseInt(a) + parseInt(b);
+// }
 
-export function subtractNumbers(a, b) {
-    console.log(parseInt(a) - parseInt(b));
-    return parseInt(a) - parseInt(b);
-}
-
-<<<<<<< HEAD
-// module.exports = {
-//     method: getNumbers,
-//     othermethod: subtractNumbers
-// };
-=======
-module.exports = {
-    getNumbers: getNumbers,
-    subtractNumbers: subtractNumbers
-};
->>>>>>> refs/remotes/origin/main
+// export function subtractNumbers(a, b) {
+//     console.log(parseInt(a) - parseInt(b));
+//     return parseInt(a) - parseInt(b);
+// }
