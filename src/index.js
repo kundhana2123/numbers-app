@@ -1,4 +1,4 @@
-import arithmetica from "./arithmetica"
+import arithmetica from "./arithmetica.js"
 const express =require('express') 
 const cors = require('cors')
 const app=express()
