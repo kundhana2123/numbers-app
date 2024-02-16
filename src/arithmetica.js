@@ -1,7 +1,7 @@
 function getNumbers(a,b) {
     return parseInt(a)+parseInt(b);
     }
-module.exports={ getNumbers }
+module.exports = {getNumbers}
 
 // function subtractNumbers(a,b) {
 //     console.log( (parseInt(a)-parseInt(b)))

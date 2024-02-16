@@ -1,6 +1,7 @@
-import arithmetica from './arithmetica'
+// import arithmetica from './arithmetica'
 const express =require('express') 
 const cors = require('cors')
+const { getNumbers } = require("./arithmetica")
 const app=express()
 const port =3000
 app.use(cors());
