@@ -19,6 +19,6 @@ function subtractNumbers(a, b) {
 }
 
 module.exports = {
-    method: getNumbers,
-    othermethod: subtractNumbers
+    getNumbers: getNumbers,
+    subtractNumbers: subtractNumbers
 };
