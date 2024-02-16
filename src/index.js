@@ -1,4 +1,4 @@
-const { method: getNumbers, othermethod: subtractNumbers } = require("./arithmetica.js");
+import { method as getNumbers, othermethod as subtractNumbers } from "./arithmetica.js";
 
 const express =require('express') 
 const cors = require('cors')
