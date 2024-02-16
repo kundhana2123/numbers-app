@@ -18,7 +18,14 @@ export function subtractNumbers(a, b) {
     return parseInt(a) - parseInt(b);
 }
 
+<<<<<<< HEAD
 // module.exports = {
 //     method: getNumbers,
 //     othermethod: subtractNumbers
 // };
+=======
+module.exports = {
+    getNumbers: getNumbers,
+    subtractNumbers: subtractNumbers
+};
+>>>>>>> refs/remotes/origin/main
