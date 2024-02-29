@@ -49,9 +49,10 @@
         </div>  
         <div class="column">
             <section>
-                <h2>Prime check</h2>                
+                <h2>Cipher check</h2>                
                 <label>Text to cipher:</label>
                 <input id="textToCipher"/>
+                <input id="shift"/>
                 <button onclick="cipher()">Check</button>
                 <label id="cipherResult"></label>  
             </section>           
@@ -79,10 +80,13 @@
             console.log(response)
         }
         async function cipher() {
-            const numberToTest = document.getElementById("textToCipher");            
-            let pt = textToCipher.value;            
-            const response = await fetch("https://primeservice-kt9v.onrender.com/");
-            const result = await response.json(response);
+            const textToCipher = document.getElementById("textToCipher");            
+            let pt = textToCipher.value;   
+            const shift = document.getElementById("shift");            
+            let sft = shift.value;          
+            const response = await fetch("http://127.0.0.1:8000/cipher/cipherfunc/"+pt+"/"+sft);
+            //const response = await fetch("http://127.0.0.1:8000/cipher/");
+            const result = await response.json();
             //document.getElementById("primeCheckResult").innerText = result; 
             console.log(result)
         }
