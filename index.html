@@ -93,7 +93,7 @@
             const shift = document.getElementById("shift");            
             let sft = shift.value;          
             // const response = await fetch("http://127.0.0.1:8000/cipher/cipherfunc/"+pt+"/"+sft);
-            const response = await fetch(`https://cipher-xh27.onrender.com/ciphers/caesar/`+pt+"/"+sft), {
+            const response = await fetch(`https://cipher-xh27.onrender.com/ciphers/caesar/${pt}/${sft}`), {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
