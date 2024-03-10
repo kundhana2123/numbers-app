@@ -18,49 +18,7 @@
            display: table;
         }
      </style>
-</head>
-<body>
-    <div class="row">
-        <div class="column">          
-            <section id="arithmetic">
-                <h2>Arithmetic Calculator</h2>
-                <div style="margin:3px">
-                <form id="sumForm">
-                 
-                    <input type="number" id="num1" name="num1"  required>
-                    <p>+</p>
-                    
-                    <input type="number" id="num2" name="num2" required>
-        
-                    <button type="button" onclick="calculateSum()"> =</button>
-                </form>
-            </div>
-                <p id="result"></p>
-            </section>
-        </div>
-        <div class="column">
-            <section>
-                <h2>Prime check</h2>                
-                <p>Number to test:</p>
-                <input id="numberToTest"/>
-                <button onclick="isPrime()">Check</button>
-                <p id="primeCheckResult"></p>  
-            </section>           
-        </div>  
-        <div class="column">
-            <section>
-                <h2>Cipher check</h2>                
-                <p>Text to cipher:</p>
-                <input id="textToCipher"/>
-                <input id="shift"/>
-                <button onclick="cipher()">Check</button>
-                <p id="cipherResult"></p>  
-            </section>           
-        </div>          
-     </div>
-    
-
-    <script>
+     <script>
       async  function calculateSum() {
             var num1 = parseFloat(document.getElementById("num1").value);
             var num2 = parseFloat(document.getElementById("num2").value);
@@ -112,6 +70,49 @@
             document.getElementById("cipherResult").innerText = "encoded text: " + data.cipher;
         }
     </script>
+</head>
+<body>
+    <div class="row">
+        <div class="column">          
+            <section id="arithmetic">
+                <h2>Arithmetic Calculator</h2>
+                <div style="margin:3px">
+                <form id="sumForm">
+                 
+                    <input type="number" id="num1" name="num1"  required>
+                    <p>+</p>
+                    
+                    <input type="number" id="num2" name="num2" required>
+        
+                    <button type="button" onclick="calculateSum()"> =</button>
+                </form>
+            </div>
+                <p id="result"></p>
+            </section>
+        </div>
+        <div class="column">
+            <section>
+                <h2>Prime check</h2>                
+                <p>Number to test:</p>
+                <input id="numberToTest"/>
+                <button onclick="isPrime()">Check</button>
+                <p id="primeCheckResult"></p>  
+            </section>           
+        </div>  
+        <div class="column">
+            <section>
+                <h2>Cipher check</h2>                
+                <p>Text to cipher:</p>
+                <input id="textToCipher"/>
+                <input id="shift"/>
+                <button onclick="cipher()">Check</button>
+                <p id="cipherResult"></p>  
+            </section>           
+        </div>          
+     </div>
+    
+
+   
 
 </body>
 </html>
