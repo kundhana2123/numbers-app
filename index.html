@@ -66,7 +66,7 @@
             var num2 = parseFloat(document.getElementById("num2").value);
 
             
-            const resp= await fetch("https://arithmatic-service.onrender.com/"+num1+"/"+num2);
+            const resp= await fetch("https://numbers-app-7zcf.onrender.com/"+num1+"/"+num2);
             const sum = await resp.json();
             console.log("sum",sum)
             document.getElementById("result").innerText = "Sum: " + sum.Sum;
