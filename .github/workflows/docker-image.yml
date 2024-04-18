@@ -15,5 +15,10 @@ jobs:
             - name: Build and push the image
               run: |
                 docker login --username kundhana2123 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-                docker build -t ghcr.io/kundhana2123/arithmetic-service:latest --file Dockerfile .
-                docker push ghcr.io/kundhana2123/arithmetic-service:latest
+                docker build -t ghcr.io/kundhana2123/arithmetic-service:1 --file Dockerfile .
+                docker push ghcr.io/kundhana2123/arithmetic-service:1
+            - name: Publish the image to azure ontainer registry
+              run: |
+                docker login --username practicuma15 --password 2eIvI7lLHqz2tlXKmznM7lnH3a+SS7nwOWk1LyKAP8+ACRBVnZuh practicuma15.azurecr.io
+                docker tag ghcr.io/kundhana2123/arithmetic-service:1 practicuma15.azurecr.io/arithmetic-service:1
+                docker push practicuma15.azurecr.io/arithmetic-service:1
